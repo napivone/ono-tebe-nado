@@ -1,1 +1,276 @@
-/* место для вашего кода */
+.body {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  padding: 92px 24px;
+  font-size: 18px;
+}
+
+.header__menu {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+  padding-right: 36px;
+  padding-left: 26.52px;
+}
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.address {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.header__address {
+  justify-self: end;
+  padding-right: 25.48px;
+}
+
+.cover {
+  position: relative;
+  z-index: 1;
+  padding: 165px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  margin-bottom: 135px;
+  color: #fff;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+  line-height: 1.15;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.aligned-text_center {
+  margin: 20px 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.aligned-text_right {
+  line-height: 1;
+  text-align: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 79px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 0.84em;
+}
+
+.bet-button {
+  border: 1px solid currentColor;
+  padding: 12px 32px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.lots {
+  padding: 179px 24px 0;
+}
+
+.lots__heading {
+  margin-left: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 27px 0 30px;
+  color: #fff;
+  list-style-type: none;
+}
+
+.lots__card-list-item {
+  flex: 1 1 334px;
+  min-height: 563px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 51px 40px 48px;
+}
+
+.card__title {
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 20px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.lots__look-more-link {
+  margin-left: 40px;
+  border-bottom: 1px solid currentColor;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 72px;
+  padding: 146px 24px 0;
+}
+
+.about__column {
+  margin: 36px 0 0 47px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  margin: 100px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 182px 50px 88px;
+}
+
+.footer__menu {
+  justify-self: center;
+  align-self: baseline;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+.footer__menu-list-item {
+  margin: -3px 0;
+  text-align: center;
+}
+
+.footer__menu-link {
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.footer__menu-link_active {
+  border: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: end;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+}
